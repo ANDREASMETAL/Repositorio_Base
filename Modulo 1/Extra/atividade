@@ -1,0 +1,44 @@
+cardapio = {
+    'cardapio' : ['camarão', 'arroz', 'pizza'],
+    'preços' : ['R$50', 'R$10', 'R$20']
+}
+
+
+def mostrar_tarefas():
+    for i in range(len(cardapio['cardapio'])):
+        print(f'{i+1}. cardapio {cardapio['cardapio'][i]} - Preços: {cardapio["preços"][i]}')
+
+
+def mostrar_menu():
+    while True: 
+            print('|',30*'-','|')
+            print('| CARDAPIO')
+            print('|',30*'-','|')
+            print('1 - cardapio ')
+            print('2 - Adicionar ao cardapio ')
+            print('3 - Remover do cardapio ')
+            print('4 - Sair do menu ')
+            print('|',30*'-','|')
+    
+            opcao = int(input('Selecione uma das opções do menu: '))
+            if opcao == 1:
+                print('|',30*'-','|')
+                print(f'cardapio' (cardapio))
+                input('pressione enter para continuar...')
+            elif opcao == 2:
+                print('|',30*'-','|')
+                print('Adicione ao cardapio')
+                input('pressione enter para continuar...')
+            elif opcao == 3:
+                print('|',30*'-','|')
+                print('Selecione o iten de remoção')
+                input('pressione enter para continuar...')
+            elif opcao == 4:
+                print('|',30*'-','|')
+                print('Sair')
+                break
+            else:
+                print('|',30*'-','|')
+                print('Resultado invalido, tente novamente:')
+
+mostrar_menu()
