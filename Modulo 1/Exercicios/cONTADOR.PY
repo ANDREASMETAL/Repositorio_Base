@@ -1,0 +1,8 @@
+nome=input('qual e o seu nome?')
+idade=input('qual a sua idade?')
+email=input('por favor adicione o seu email?')
+senha=input('qual a senha?')
+print('nome:',nome)
+print('idadade:',idade)
+print('email:',email)
+print('senha:',senha)
